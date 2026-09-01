@@ -1,0 +1,62 @@
+project:
+  name: huardb_reproduction
+  sample_id: CPIc_C2
+  random_seed: 42
+
+data:
+  gex_accession: GSM4288827
+  gex_file: GSM4288827_C2-CD3-genes-barcodes-matrix.tar.gz
+  gex_url: "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM4288827&file=GSM4288827_C2-CD3-genes-barcodes-matrix.tar.gz&format=file"
+  tcr_accession: GSE144469
+  tcr_sample_accession: GSM4288865
+  tcr_file: GSE144469_TCR_filtered_contig_annotations_all.csv.gz
+  tcr_url: "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE144469&file=GSE144469_TCR_filtered_contig_annotations_all.csv.gz&format=file"
+  gex_source_dir: data/processed/gex_source/C2-CD3
+
+barcode:
+  tcr_sample_suffix: "-C2"
+  gex_suffix: "-1"
+
+gex_qc:
+  min_genes: 200
+  max_pct_mt: 20.0
+  doublet_method: none
+
+clonotype:
+  expanded_min_size: 2
+  transcriptome_correlation_min_size: 5
+
+transcriptome:
+  target_sum: 10000
+  n_top_genes: 2000
+  n_pcs: 30
+  n_neighbors: 15
+  leiden_resolution: 0.8
+
+markers:
+  feature_plot:
+    - CD4
+    - CD8A
+    - CCR7
+    - IL7R
+    - NKG7
+    - GNLY
+    - GZMB
+    - IFNG
+    - PDCD1
+    - TOX
+  clone_expression:
+    - IFNG
+    - GZMB
+    - PRF1
+    - NKG7
+    - PDCD1
+    - TOX
+    - IL7R
+    - TCF7
+  state_signatures:
+    naive_memory: [CCR7, IL7R, TCF7, LEF1, LTB]
+    cytotoxic: [NKG7, GNLY, GZMB, PRF1, IFNG]
+    activated_exhausted: [PDCD1, CTLA4, LAG3, HAVCR2, TOX, CXCL13]
+    treg_like: [FOXP3, CTLA4, IL7R]
+

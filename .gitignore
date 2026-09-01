@@ -1,0 +1,11 @@
+.conda_env/
+.conda_pkgs/
+data/raw/
+data/processed/
+results/
+logs/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+

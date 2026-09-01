@@ -1,0 +1,3 @@
+accession	sample_accession	role	file	url	download_date	size_bytes	md5	sha256
+GSM4288827	GSM4288827	GEX	GSM4288827_C2-CD3-genes-barcodes-matrix.tar.gz	https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM4288827&file=GSM4288827_C2-CD3-genes-barcodes-matrix.tar.gz&format=file	2026-09-01	39122747	8ebd05341301b8cd843885ec81232af2	e1dba171e9d201eb6fb47a7b6390a2de809e3c459ed724688f5102aa9447d106
+GSE144469	GSM4288865	TCR	GSE144469_TCR_filtered_contig_annotations_all.csv.gz	https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE144469&file=GSE144469_TCR_filtered_contig_annotations_all.csv.gz&format=file	2026-09-01	7441939	1b59e64b6db7e1bda6398094cc29ecd4	0ca6bb89c55125583c06f09969e61c693f2170a47819cbbb1e4ee72c116023d9
